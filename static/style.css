@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#eef2ff, #f8fafc);
+    color: #1f2937;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #667085;
+}
+
+.tutor-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#question {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+#question:focus {
+    border-color: #667085;
+}
+
+button {
+    padding: 15px 24px;
+    border: none;
+    border-radius: 10px;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #374151;
+}
+
+#answer {
+    margin-top: 25px;
+}
+
+.ai-label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.ai-response {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    line-height: 1.6;
+}
+
+.ai-response pre {
+    background: #111827;
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+}
+
+.ai-response code {
+    font-family: Consolas, monospace;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+.chat-message {
+    padding: 15px 18px;
+    margin-top: 15px;
+    border-radius: 14px;
+    line-height: 1.6;
+}
+
+.user-message {
+    background: #eef2ff;
+    margin-left: 60px;
+}
+
+.ai-message {
+    background: #f8fafc;
+    margin-right: 60px;
+}
+
+.chat-message p {
+    margin: 8px 0 0;
+}
+
+.ai-message pre {
+    background: #111827;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+    .user-message {
+        margin-left: 0;
+    }
+
+    .ai-message {
+        margin-right: 0;
+    }
+}
